@@ -134,7 +134,8 @@ void printHelp() {
     "      1024x768x60    - 1024 x 768    @ 60 fps\n"
     "      1366x768x60    - 1366 x 768    @ 60 fps\n"
     "      1280x1024x60   - 1280 x 1024   @ 60 fps\n"
-    "      1600x1200x60   - 1600 x 1200   @ 60 fps\n" 
+    "      1600x1200x60   - 1600 x 1200   @ 60 fps\n"
+    "      1920x1200x60   - 1920 x 1200   @ 60 fps\n"
     "      2560x1440x30   - 2560 x 1440   @ 30 fps\n"
     "\n"
     "    -w [Path]        - DVR feature: saving video to file extention h265 (tested with SDcard reader)\n"
@@ -265,6 +266,11 @@ int main(int argc, const char* argv[]) {
       vo_width = 1600;
       vo_height = 1200;
       vo_framerate = 60;
+    } else if (!strcmp(mode, "1920x1200x60")) {
+      vo_mode = VO_OUTPUT_1920x1200_60;
+      vo_width = 1920;
+      vo_height = 1200;
+      vo_framerate = 60;      
     } else if (!strcmp(mode, "2560x1440x30")) {
       vo_mode = VO_OUTPUT_2560x1440_30;
       vo_width = 2560;
