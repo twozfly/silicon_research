@@ -270,7 +270,7 @@ int main(int argc, const char* argv[]) {
       vo_mode = VO_OUTPUT_1920x1200_60;
       vo_width = 1920;
       vo_height = 1200;
-      vo_framerate = 60;      
+      vo_framerate = 60;
     } else if (!strcmp(mode, "2560x1440x30")) {
       vo_mode = VO_OUTPUT_2560x1440_30;
       vo_width = 2560;
